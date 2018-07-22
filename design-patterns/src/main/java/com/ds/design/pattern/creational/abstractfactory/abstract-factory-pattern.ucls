@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.ds.design.pattern.creational.abstractfactory.MacButton" 
+    project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/abstractfactory/MacButton.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="83" width="223" x="392" y="196"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" 
+    name="com.ds.design.pattern.creational.abstractfactory.UIComponentAbstractFactoryFactory" project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/abstractfactory/UIComponentAbstractFactoryFactory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="311" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.ds.design.pattern.creational.abstractfactory.WindowsDialogBox" 
+    project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/abstractfactory/WindowsDialogBox.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="223" x="1181" y="196"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.ds.design.pattern.creational.abstractfactory.WindowsButton" 
+    project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/abstractfactory/WindowsButton.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="223" x="655" y="196"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.ds.design.pattern.creational.abstractfactory.MacFactory" 
+    project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/abstractfactory/MacFactory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="223" x="1717" y="196"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="6" language="java" name="com.ds.design.pattern.creational.abstractfactory.System" 
+    project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/abstractfactory/System.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="119" width="223" x="392" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="7" language="java" name="com.ds.design.pattern.creational.abstractfactory.UIComponentAbstractFactory" 
+    project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/abstractfactory/UIComponentAbstractFactory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="224" x="1581" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.ds.design.pattern.creational.abstractfactory.MacDialogBox" 
+    project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/abstractfactory/MacDialogBox.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="223" x="918" y="196"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.ds.design.pattern.creational.abstractfactory.WindowsFactory" 
+    project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/abstractfactory/WindowsFactory.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="119" width="223" x="1444" y="196"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.ds.design.pattern.creational.factory.Button" project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/factory/Button.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="83" width="188" x="655" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.ds.design.pattern.creational.factory.DialogBox" project="design-patterns" 
+    file="/design-patterns/src/main/java/com/ds/design/pattern/creational/factory/DialogBox.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="83" width="188" x="1050" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="12">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="13">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="14" name="INSTANCE"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="16">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <generalization id="18">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <generalization id="20">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <association id="21">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="22" name="INSTANCE"/>      
+      <multiplicity id="23" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

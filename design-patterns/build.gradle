@@ -1,0 +1,117 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		mavenLocal()
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'jacoco'
+apply plugin: 'maven-publish'
+
+group = 'com.ds'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+	mavenLocal()
+}
+
+// give test dependencies access to compileOnly dependencies to emulate providedCompile
+configurations {
+    testImplementation.extendsFrom compileOnly
+}
+
+dependencies {
+	compile('com.ds.utils:common-utils:0.0.1-SNAPSHOT')
+	compileOnly('org.slf4j:slf4j-api:1.7.25')
+	compileOnly('org.slf4j:slf4j-simple:1.7.25')
+	compileOnly('org.projectlombok:lombok:1.16.6')
+	compile('junit:junit:4.12')
+}
+
+jacocoTestCoverageVerification.dependsOn jacocoTestReport
+jacocoTestReport.dependsOn test
+
+jacoco {
+	toolVersion = '0.8.1'
+}
+
+jacocoTestReport {
+	reports {
+		xml.enabled false
+		csv.enabled false
+		html.enabled true
+	}
+}
+
+jacocoTestCoverageVerification {
+	violationRules {
+		rule {
+			limit {
+				minimum = 0.0
+			}
+		}
+	}
+}
+
+task packageJavadoc(type: Jar, dependsOn: 'javadoc') {
+	from javadoc.destinationDir
+	classifier = 'javadoc'
+}
+task packageSources(type: Jar, dependsOn: 'classes') {
+	from sourceSets.main.allSource
+	classifier = 'sources'
+}
+
+jar {
+	enabled = true
+}
+javadoc {
+	failOnError = false
+}
+
+publish.dependsOn jacocoTestCoverageVerification
+publishToMavenLocal.dependsOn jacocoTestCoverageVerification
+
+publishing {
+	publications {
+		maven(MavenPublication) {
+			groupId = 'com.ds'
+			artifactId = 'design-patterns'
+
+			artifacts = [packageJavadoc, packageSources]
+			from components.java
+
+			pom {
+				name = 'design-patterns'
+				description = 'Project Highlighting various OO Design Patterns'
+				url = 'https://github.com/Sarvesh-D/samples/design-patterns'
+				licenses {
+					license {
+						name = 'The Apache License, Version 2.0'
+						url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+					}
+				}
+				developers {
+					developer {
+						id = 'Sarvesh-D'
+						name = 'Sarvesh Dubey'
+						email = 'sarvesh.dubey@hotmail.com'
+					}
+				}
+				scm {
+					connection = 'scm:git:git://github.com/Sarvesh-D/samples.git'
+					developerConnection = 'scm:git:ssh://github.com:Sarvesh-D/samples.git'
+					url = 'http://github.com/Sarvesh-D/samples/tree/master'
+				}
+			}
+		}
+	}
+
+	repositories {
+		mavenLocal()
+	}
+}
