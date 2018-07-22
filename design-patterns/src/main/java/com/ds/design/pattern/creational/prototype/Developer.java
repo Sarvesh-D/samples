@@ -22,8 +22,9 @@ import org.apache.commons.lang3.RandomUtils;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
-final final @EqualsAndHashCode(callSuper = true) public class Developer extends Employee {
+public class Developer extends Employee {
 
     public Developer(final String firstName, final String lastName, final int age, final Set<String> roles) {
         super(RandomUtils.nextLong(), firstName, lastName, age, roles);
