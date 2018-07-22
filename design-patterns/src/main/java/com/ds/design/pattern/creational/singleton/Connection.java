@@ -20,7 +20,6 @@ import lombok.Getter;
 /**
  * Multiple ways to make Connection Class as singleton
  *
- * @author <a href="mailto:sarvesh.dubey@cdk.com">Sarvesh Dubey</a>
  *
  * @since 18-03-2018
  * @version
